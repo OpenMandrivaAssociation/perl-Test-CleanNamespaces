@@ -3,7 +3,7 @@
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	%mkrel 1
+Release:	1
 
 Summary:	Check for uncleaned imports
 License:	GPL+ or Artistic
@@ -27,7 +27,7 @@ BuildArch:	noarch
 Check for uncleaned imports.
 
 %prep
-%autosetup -n %{upstream_name}-%{upstream_version}
+%setup -n %{upstream_name}-%{upstream_version}
 
 %build
 %__perl Makefile.PL INSTALLDIRS=vendor
