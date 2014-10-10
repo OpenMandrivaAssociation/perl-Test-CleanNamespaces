@@ -18,6 +18,7 @@ BuildRequires:	perl(Sub::Exporter)
 BuildRequires:	perl(Sub::Identify)
 BuildRequires:	perl(Test::Deep)
 BuildRequires:	perl(Test::Requires)
+BuildRequires:	perl(Test::Tester)
 BuildRequires:	perl(Test::Warnings)
 BuildRequires:	perl(namespace::clean)
 
