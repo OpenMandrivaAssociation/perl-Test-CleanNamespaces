@@ -1,15 +1,13 @@
 %define upstream_name Test-CleanNamespaces
-%define upstream_version 0.16
-
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	5
+Version:	0.16
+Release:	6
 
 Summary:	Check for uncleaned imports
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Test/%{upstream_name}-%{upstream_version}.tar.gz
+Url:		https://metacpan.org/dist/%{upstream_name}
+Source0:	http://www.cpan.org/modules/by-module/Test/%{upstream_name}-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl(File::Find::Rule::Perl)
@@ -29,7 +27,7 @@ BuildArch:	noarch
 Check for uncleaned imports.
 
 %prep
-%setup -n %{upstream_name}-%{upstream_version}
+%setup -n %{upstream_name}-%{version}
 
 %build
 %__perl Makefile.PL INSTALLDIRS=vendor
